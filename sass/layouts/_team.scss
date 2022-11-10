@@ -1,0 +1,51 @@
+.team {
+  background: var(--white-background);
+ }
+
+ .team__items{
+  @include flex-centered($justify: space-between);
+  gap: 0px 30px;
+ }
+
+ .team__card {
+  padding: 30px 0;
+  text-align: center;
+  background: var(--white-acsent);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  /* outline: 1px solid olive; */
+ }
+
+ .team__subtitle {
+  font-weight: 500;
+  font-size: 16px;  
+  line-height: 1.19;
+  margin-bottom: 10px;
+ }
+
+ .team__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--color-context);
+ }
+
+.social__icons {
+  @include flex-centered();
+  gap: 0 10px;
+}
+
+.icon-social__team {
+  color: var(--white-border-icon);
+  transition: color var(--timing-function),
+    background-color var(--timing-function);
+  &:hover, &:focus {
+    color: var(--white-acsent);
+    background-color: var(--color-chromatic-hover);
+  }
+}
+
+.thumb-social {
+  width: 44px;
+  height: 44px;
+}

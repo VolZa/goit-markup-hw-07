@@ -1,0 +1,32 @@
+.customers__items{
+  @include flex-centered($justify: space-between);
+  list-style: none;
+  gap: 0px 30px;
+}
+
+.customers__item {
+  width: 170px;
+  height: 92px;
+  &:hover {
+    border-color: var(--color-chromatic-usual);
+  }
+}
+
+.customers__link{
+  @include flex-centered();
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--white-border-icon);
+  border-radius: 4px;
+  color: var(--white-border-icon);
+  transition: color var(--timing-function),
+  border-color var(--timing-function);
+  &:hover,   &:focus {
+    color: var(--color-chromatic-hover);
+    border-color: var(--color-chromatic-usual);
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+}             

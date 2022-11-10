@@ -1,0 +1,27 @@
+:root{
+  --main-ff: "Roboto", san-serif;
+  --logo-ff: "Raleway", san-serif;
+
+  --color-main: #212121;
+  --color-context: #757575;
+
+  --dark-acsent: #000000;
+  --white-acsent: #FFFFFF;
+  --white-border:  #EEEEEE;
+  --white-border-icon:#AFB1B8;
+  --white-сontext: rgba(255, 255, 255, 0.6);
+  /* --color-bg-image: rgba(47, 48, 58, 0.4); */
+  --white-background: #F5F4FA; 
+  --color-dark-background: #2F303A;
+  /* --color-shadow:rgba(0, 0, 0, 0.15); */
+
+  --color-chromatic-usual: #2196F3;
+  --color-chromatic-hover: #188CE8; 
+  --card-hover: rgba(33, 150, 243, 0.9); 
+
+  --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+// $color-main: #212121;
+// $white-acsent: #FFFFFF;
+$timingFunction: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+

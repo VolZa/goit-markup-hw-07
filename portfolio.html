@@ -19,14 +19,14 @@
     />
     <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
     <!-- <link rel="stylesheet" href="./css/aside.css"/> -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="header__container container">
         <nav class="menu">
           <a class="logo" href="./index.html"
-            ><span class="accent">Web</span>Studio</a
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="header__items header__items-nav items">
             <li class="header__item">
@@ -37,7 +37,7 @@
               <a class="nav__link link" href="./portfolio.html">Портфоліо</a>
             </li>
 
-            <li>
+            <li class="header__item">
               <a class="nav__link link" href="#">Контакти</a>
             </li>
           </ul>
@@ -45,9 +45,12 @@
 
         <ul class="header__items items">
           <li class="header__item">
-            <a class="contact__link link" href="mailto:info@devstudio.com">
+            <a
+              class="contact__link contact__link-envelope link"
+              href="mailto:info@devstudio.com"
+            >
               <svg class="icon__contact" width="16px" height="12px">
-                <use href="./images/icon/symbol-defs.svg#icon-envelope "></use>
+                <use href="./images/icon/symbol-defs.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -94,7 +97,7 @@
           <ul class="galery">
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img1.jpg"
                     alt="Картки людей на екрані ноутбука"
@@ -116,7 +119,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img2.jpg"
                     alt="Баскетболісти з м'ячем"
@@ -139,7 +142,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img3.jpg"
                     alt="Реклама ресторану"
@@ -160,7 +163,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img4.jpg"
                     alt="Навушники"
@@ -181,7 +184,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img5.jpg"
                     alt="Упаковочні коробки"
@@ -202,7 +205,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img6.jpg"
                     alt="Монітор ПК"
@@ -223,7 +226,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img7.jpg"
                     alt="Розгортка модного журналу "
@@ -244,7 +247,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img8.jpg"
                     alt="Бірка"
@@ -265,7 +268,7 @@
 
             <li class="galery__card">
               <a href="" class="galery__card-link link">
-                <div class="galery__card-tumb">
+                <div class="galery__card-thumb">
                   <img
                     src="./images/portfolio/img9.jpg"
                     alt="Робота з ноутбуком"
@@ -292,8 +295,8 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer__block">
-          <a class="logo__footer logo" href="./index.html">
-            <span class="accent">Web</span>Studio
+          <a class="logo footer__logo" href="./index.html">
+            <span class="logo__accent">Web</span>Studio
           </a>
           <address class="footer__address">
             <ul class="items">
@@ -322,7 +325,7 @@
         <div class="footer__block footer-social">
           <h3 class="footer__subtitle subtitle">приєднуйтесь</h3>
           <ul class="social__icons items">
-            <li class="footer__icon tumb-social">
+            <li class="footer__icon thumb-social">
               <a href="" class="icon-social__footer icon-social">
                 <svg class="icon-social__icon" width="22" height="22">
                   <use
@@ -331,21 +334,21 @@
                 </svg>
               </a>
             </li>
-            <li class="footer__icon tumb-social">
+            <li class="footer__icon thumb-social">
               <a href="" class="icon-social__footer icon-social">
                 <svg class="icon-social__icon" width="22" height="22">
                   <use href="./images/icon/symbol-defs.svg#icon-twitter "></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__icon tumb-social">
+            <li class="footer__icon thumb-social">
               <a href="" class="icon-social__footer icon-social">
                 <svg class="icon-social__icon" width="22" height="22">
                   <use href="./images/icon/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer__icon tumb-social">
+            <li class="footer__icon thumb-social">
               <a href="" class="icon-social__footer icon-social">
                 <svg class="icon-social__icon" width="22" height="22">
                   <use

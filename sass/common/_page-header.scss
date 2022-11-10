@@ -1,0 +1,89 @@
+.header {
+  border-bottom: 1px solid #ECECEC;
+  padding: 24px 0;
+}
+
+.header__container{
+  @include flex-centered(baseline, space-between);
+}
+
+.menu {
+  @include flex-centered(baseline);
+}
+
+.header__items-nav {
+  margin-left: 93px;
+}
+
+.nav__link,
+.contact__link {
+  @include flex-centered(baseline);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+ 
+  transition: color  var(--timing-function);
+}
+
+.nav__link {
+  color: var(--color-main);
+  &::after {
+    position: absolute;
+    left: -3px;
+    bottom: -28px;
+  
+    content: '';
+    display: block;
+    width: calc(100% + 6px);
+    height: 4px;
+    border-radius: 2px;
+  
+    background-color: var(--color-chromatic-usual);
+    opacity: 0;  
+  }
+  .active &{
+    color: var(--color-chromatic-usual);
+  }
+  .active &::after {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    color: var(--color-chromatic-usual);
+    fill:  var(--color-chromatic-usual);
+  }
+}
+
+.contact__link {
+  color: var(--color-context);
+  &:hover,
+  &:focus {
+    color: var(--color-chromatic-hover);
+  }
+}
+
+.header__items {
+  @include flex-centered(baseline);
+}
+
+.header__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+
+
+/* при натисканні  */
+.link:active {
+  color: var(--color-chromatic-usual);
+}
+
+
+/* активна сторінка */
+
+.icon__contact {
+  margin-right: 10px;
+  fill: currentColor;
+}
