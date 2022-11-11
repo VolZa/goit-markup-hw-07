@@ -6,7 +6,7 @@
 @import './sass/common/logo';
 @import './sass/common/page-header';
 @import './sass/components/icon-social';
-
+@import './sass/components/button';
 
 @import './sass/layouts/hero';
 @import './sass/layouts/featuers';
@@ -14,8 +14,8 @@
 @import './sass/layouts/team';
 @import './sass/layouts/customers';
 
-@import './sass/layouts/portfolio';
-@import './sass/layouts/galery';
+@import './sass/layouts-portfolio/filters';
+@import './sass/layouts-portfolio/galery';
 
 @import './sass/common/footer';
 @import './sass/components/backdrop';

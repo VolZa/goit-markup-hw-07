@@ -8,8 +8,8 @@
 
 .filters__button {
   padding: 6px 22px;
-  border: none;
-  border-radius: 4px;
+  // border: none;
+  // border-radius: 4px;
 
   font-family: "Roboto", san-serif; 
   font-size: 16px; 
@@ -17,10 +17,11 @@
   letter-spacing: 0.03em;
   line-height: 1.63;
   color: var(--color-main);
+  background-color: var(--white-background);
 
-  transition: color  var(--timing-function),
-    background-color  var(--timing-function),
-    box-shadow  var(--timing-function) ;
+  transition: color  $timingFunction,
+      background-color  $timingFunction,
+      box-shadow  $timingFunction;
 
   &:hover, &:focus {
     @extend %button-selected;
@@ -32,3 +33,4 @@
   color: var(--white-acsent);
 }
 
+// var(--timing-function)
