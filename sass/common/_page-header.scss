@@ -1,4 +1,4 @@
-.header {
+.header__body {
   border-bottom: 1px solid #ECECEC;
   padding: 24px 0;
 }
@@ -7,16 +7,16 @@
   @include flex-centered(baseline, space-between);
 }
 
-.menu {
+.nav {
   @include flex-centered(baseline);
 }
 
-.header__items-nav {
+.menu__items-nav {
   margin-left: 93px;
 }
 
-.nav__link,
-.contact__link {
+.menu__link,
+.menu__contact {
   @include flex-centered(baseline);
   font-weight: 500;
   line-height: 1.14;
@@ -25,7 +25,7 @@
   transition: color  var(--timing-function);
 }
 
-.nav__link {
+.menu__link {
   color: var(--color-main);
   &::after {
     position: absolute;
@@ -53,8 +53,7 @@
     fill:  var(--color-chromatic-usual);
   }
 }
-
-.contact__link {
+.menu__contact {
   color: var(--color-context);
   &:hover,
   &:focus {
@@ -62,11 +61,12 @@
   }
 }
 
-.header__items {
+
+.menu {
   @include flex-centered(baseline);
 }
 
-.header__item {
+.menu__item {
   position: relative;
   &:not(:last-child) {
     margin-right: 50px;
@@ -83,7 +83,7 @@
 
 /* активна сторінка */
 
-.icon__contact {
+.menu__icon {
   margin-right: 10px;
   fill: currentColor;
 }
