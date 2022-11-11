@@ -19,9 +19,9 @@
   --timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filtered, .filters__button:hover, .filters__button:focus {
-  color: var(--white-acsent);
+.filtered, .filters__button:hover, .filters__button:focus, .button:hover, .button:focus {
   background-color: var(--color-chromatic-hover);
+  color: var(--white-acsent);
   cursor: pointer;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -254,6 +254,17 @@ h2 {
   fill: currentColor;
 }
 
+.button {
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--white-background);
+  -webkit-transition: background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
+  transition: background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
+  transition: background-color var(--timing-function), box-shadow var(--timing-function);
+  transition: background-color var(--timing-function), box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
+}
 .hero {
   max-width: 1600px;
   padding: 200px 0;
@@ -281,29 +292,8 @@ h2 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-}
-
-.button {
-  display: block;
-  margin: 0 auto;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
   color: var(--white-acsent);
   background-color: var(--color-chromatic-usual);
-  -webkit-transition: background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
-  transition: background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
-  transition: background-color var(--timing-function), box-shadow var(--timing-function);
-  transition: background-color var(--timing-function), box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
-}
-
-.button:hover,
-.button:focus {
-  background-color: var(--color-chromatic-hover);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .features {
@@ -458,7 +448,7 @@ h2 {
   background-color: var(--color-chromatic-hover);
 }
 
-.thumb-social {
+.thumb__social {
   width: 44px;
   height: 44px;
 }
@@ -536,13 +526,15 @@ h2 {
   letter-spacing: 0.03em;
   line-height: 1.63;
   color: var(--color-main);
-  -webkit-transition: color var(--timing-function), background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
-  transition: color var(--timing-function), background-color var(--timing-function), -webkit-box-shadow var(--timing-function);
-  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function);
-  transition: color var(--timing-function), background-color var(--timing-function), box-shadow var(--timing-function), -webkit-box-shadow var(--timing-function);
+  background-color: var(--white-background);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filtered {
   color: var(--white-acsent);
+  background-color: var(--color-chromatic-usual);
 }
 
 .galery {
@@ -614,7 +606,7 @@ h2 {
           transform: translateY(0);
 }
 
-.footer {
+.footer__wrapper {
   padding: 60px 0px;
   background-color: var(--color-dark-background);
 }
@@ -725,6 +717,15 @@ h2 {
 
 .footer__button {
   display: inline-block;
+  padding: 0;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--white-acsent);
+  background-color: var(--color-chromatic-usual);
 }
 
 .footer__send-icon {
@@ -846,6 +847,7 @@ h2 {
 .label {
   position: relative;
   padding-left: 35px;
+  margin-bottom: 30px;
   color: var(--color-context);
   font-size: 14px;
   line-height: 1.71;
@@ -894,6 +896,23 @@ h2 {
   width: calc(100% + 2px);
   height: 0.5px;
   background-color: var(--color-chromatic-usual);
+}
+
+.modal__button {
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  background: #2196F3;
+  color: var(--white-acsent);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal__button:hover, .modal__button:focus {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15), 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .modal__form {

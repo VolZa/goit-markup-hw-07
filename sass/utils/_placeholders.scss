@@ -1,9 +1,6 @@
-%button-accented {
-  background-color: var(--color-chromatic-hover);
-}
-
 %button-selected{
-  @extend %button;
+
+  background-color: var(--color-chromatic-hover);
   color: var(--white-acsent);
  
   cursor: pointer;
