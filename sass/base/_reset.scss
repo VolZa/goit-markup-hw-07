@@ -16,17 +16,19 @@ img {
   height: auto;
 }
 
-body {
-  font-family: "Roboto", san-serif;
-  font-size: 14px;
-  color: var(--color-main);
-  background-color:  var(--white-accent);
-  letter-spacing: 0.03em;
-}
-
 h2{
   margin: 0 auto 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+}
+
+.items,
+.filters,
+.galery {
+  list-style: none;
+}
+
+.link:active {
+  color: var(--color-chromatic-usual);
 }

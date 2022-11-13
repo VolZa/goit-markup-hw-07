@@ -1,0 +1,13 @@
+body {
+  font-family: "Roboto", san-serif;
+  font-size: 14px;
+  color: var(--color-main);
+  background-color:  var(--white-accent);
+  letter-spacing: 0.03em;
+}
+.container {
+  /* outline: 1px solid tomato; */
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}

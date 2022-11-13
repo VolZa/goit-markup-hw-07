@@ -1,0 +1,30 @@
+@import './sass/utils/variables';
+@import './sass/utils/mixins';
+@import './sass/utils/placeholders';
+@import './sass/utils/visually-hidden';
+
+@import './sass/base/reset';
+@import './sass/base/common';
+
+
+@import './sass/components/section';
+@import './sass/components/title';
+@import './sass/components/section';
+@import './sass/components/icon-social';
+@import './sass/components/button';
+@import './sass/components/logo';
+@import './sass/components/backdrop';
+@import './sass/components/modal';
+@import './sass/components/modal-form';
+
+@import './sass/layouts/page-header';
+@import './sass/layouts/hero';
+@import './sass/layouts/featuers';
+@import './sass/layouts/activity';
+@import './sass/layouts/team';
+@import './sass/layouts/customers';
+@import './sass/layouts/footer';
+
+@import './sass/layouts/filters';
+@import './sass/layouts/galery';
+
